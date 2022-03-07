@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Pastelería Estelar</title>
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Pastelería Estelar</h1>
+        <div class="logo">
+            <img src="image/logo.jpeg" alt="logo pastelería estelar">
+        </div>
+        <hr>
+    </header>
+    <section>
+        <h2>Bienvenidos</h2>
+        <fieldset class="lista-sabores">
+            <legend>
+                <strong>Sabores</strong>
+            </legend>
+            <ul>
+                <table>
+                    <tr>
+                        <td><li>Chocolate</li></td>
+                        <td> .............. </td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Moka</li></td>
+                        <td> .............. </td>
+                        <td>$250.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Frutas</li></td>
+                        <td> .............. </td>
+                        <td>$180.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Tres leches</li></td>
+                        <td> .............. </td>
+                        <td>$250.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Coco</li></td>
+                        <td> .............. </td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Vainilla</li></td>
+                        <td> .............. </td>
+                        <td>$220.00</td>
+                    </tr>
+                </table>
+            </ul>
+        </fieldset>
+        <fieldset class="lista-adornos">
+            <legend>
+                <strong>
+                    Adornos
+                </strong>
+            </legend>
+            <ul>
+                <table>
+                    <tr>
+                        <td><li>Caramelo suave</li></td>
+                        <td> .............. </td>
+                        <td>$80.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Frutas</li></td>
+                        <td> .............. </td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Fondant</li></td>
+                        <td> .............. </td>
+                        <td>$80.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Chantilly</li></td>
+                        <td> .............. </td>
+                        <td>$70.00</td>
+                    </tr>
+                    <tr>
+                        <td><li>Merengue</li></td>
+                        <td> .............. </td>
+                        <td>$100.00</td>
+                    </tr>
+                </table>
+            </ul>
+        </fieldset>
+    </section>
+    <section>
+        <hr>
+        <h2>Haz tu pedido</h2>
+        <form action="pedido.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefono">Teléfono:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="telefono" id="telefono">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="correo">Correo:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="correo" id="correo">
+                    </td>
+                </tr>
+            </table>
+            <label for="descripcion">Descripción:</label> <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Describe tu pastel como lo quieres!"></textarea>
+            <p>
+                <strong>Selecciona los sabores que quieres!</strong>
+            </p>
+            <input type="checkbox" name="chocolate" id="chocolate">
+            <label for="chocolate">Chocolate</label>
+            <input type="checkbox" name="moka" id="moka">
+            <label for="moka">Moka</label>
+            <input type="checkbox" name="frutas" id="frutas">
+            <label for="frutas">Frutas</label>
+            <input type="checkbox" name="tresleches" id="tresleches">
+            <label for="tresleches">Tres leches</label>
+            <input type="checkbox" name="chocolate" id="chocolate">
+            <label for="coco">Coco</label>
+            <input type="checkbox" name="vainilla" id="vainilla">
+            <label for="vainilla">Vainilla</label>
+            <p>
+                <strong>Selecciona los adornos!</strong>
+            </p>
+            <input type="checkbox" name="caramelosuave" id="caramelosuave">
+            <label for="caramelosuave">Caramelo suave</label>
+            <input type="checkbox" name="frutasAdorno" id="frutasAdorno">
+            <label for="frutasAdorno">Frutas</label>
+            <input type="checkbox" name="fondant" id="fondant">
+            <label for="fondant">Fondant</label>
+            <input type="checkbox" name="chantilly" id="chantilly">
+            <label for="chantilly">Chantilly</label>
+            <input type="checkbox" name="merengue" id="merengue">
+            <label for="merengue">Merengue</label>
+            <br>
+            <input class="boton" type="submit" value="Hacer pedido">
+            <input class="boton" type="reset" value="Borrar Datos"></input>
+        </form>
+        <hr>
+    </section>
+    <footer>
+        <p>
+            <strong>Dirección:</strong>
+            Mexico, Santa Rita 4123
+            <strong>Teléfono:</strong>
+            555-555-55-55
+            <br>
+            <strong>Horarios:</strong>
+            Lunes a viernes: 7:00 a.m. - 6 p.m.
+            <br>
+            Sabado y domingo: 7:00 a.m. - 3 p.m. 
+        </p>
+    </footer>
+</body>
+</html>
